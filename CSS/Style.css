@@ -2,17 +2,20 @@
 
 
 :root {
-    --padding-container: 100px 0;
     --color-title: #001A49;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+        background-color: #91a811;
+    background-image: radial-gradient(#cfd1f6 0.5px, transparent 0.5px), radial-gradient(#3138b2 0.5px, #100f12 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 .caja {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 3000px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -113,13 +116,13 @@ body {
 
 .SobreNosotros {
     background-color: #91a811;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
-    height: 70vh;
+    height: auto;
     padding: 10px;
     width: 100%;
+    margin-bottom: 33px;
 }
 .SobreNosotros .Text{
     width: 100%;
