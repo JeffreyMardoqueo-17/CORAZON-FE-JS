@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.caja {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -37,13 +37,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000001c 100%), url('../IMG/viandoalcielo.jpeg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
-/* Nav */
 
+/* ===============MENU DE NAVEGACION ??????? */
 .nav {
     --padding-container: 0;
     height: 100%;
@@ -84,15 +84,12 @@ body {
     width: 30px;
 }
 
-
 .nav__close {
     display: var(--show, none);
 }
 
-
-/* Hero container */
-
-.hero__container {
+/* ?========================0SECTION DE PALABRAS============ */
+.contenedorPalabras {
     max-width: 800px;
     --padding-container: 0;
     display: grid;
@@ -103,12 +100,56 @@ body {
     text-align: center;
 }
 
-.hero__title {
+.nombre {
     font-size: 3rem;
 }
 
 .palabras {
     margin-bottom: 20px;
 }
+/* //////sobre nosotros */
 
+/* Knowledge */
 
+.SobreNosotros {
+    background-color: #91a811;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+    height: 70vh;
+    padding: 10px;
+    width: 100%;
+}
+.SobreNosotros .Text{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.subtitle{
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.SobreNosotros__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.SobreNosotros__picture {
+    max-width: 500px;
+}
+
+.SobreNosotrosTexto{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.SobreNosotros__img {
+    width: 100%;
+    display: block;
+}
