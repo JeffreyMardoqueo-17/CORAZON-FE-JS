@@ -8,10 +8,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #91a811;
+    background-color: #e8eae13a;
     background-image: radial-gradient(#cfd1f6 1px, transparent 1px), radial-gradient(#3138b2 1px, #0b0b26 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
+    /* overflow: hidden; */
 }
 
 .caja {
@@ -56,8 +57,14 @@ body {
     align-items: center;
 }
 
-.nav__title {
+.nav_logo {
+    height: 20px;
+    background-color: red;
+}
+
+.nav__title h2 {
     font-weight: 300;
+    font-size: 5rem;
 }
 
 .nav__link {
@@ -164,6 +171,11 @@ body {
     display: block;
 }
 
+.bordeSobre {
+    box-shadow: rgba(76, 255, 243, 0.854) 0px 5px 15px;
+    border: 1px solid rgba(76, 255, 243, 0.854);
+}
+
 /*FOOOTEEER*/
 
 /*Pie de pagina o el footer*/
@@ -175,7 +187,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
-    background: #040623;
+    background: var(--color-title);
 }
 
 .pie-pagina .grupo-1 .box figure {
@@ -210,15 +222,15 @@ body {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #873c3c;
+    color: var(--text);
     margin-right: 10px;
-    background-color: #be7200;
+    background-color: var(--color-title);
     text-align: center;
     transition: all 300ms ease;
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-    color: rgb(2, 255, 255);
+    color: rgba(76, 255, 243, 0.854);
 }
 
 .pie-pagina .grupo-2 {
