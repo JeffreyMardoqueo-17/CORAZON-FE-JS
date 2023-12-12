@@ -3,12 +3,13 @@
 
 :root {
     --color-title: #001A49;
+    --text: #ffff;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-        background-color: #91a811;
-    background-image: radial-gradient(#cfd1f6 0.5px, transparent 0.5px), radial-gradient(#3138b2 0.5px, #100f12 0.5px);
+    background-color: #91a811;
+    background-image: radial-gradient(#cfd1f6 1px, transparent 1px), radial-gradient(#3138b2 1px, #0b0b26 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
 }
@@ -19,6 +20,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
+    border-radius: 10px;
 }
 
 .header {
@@ -110,12 +112,14 @@ body {
 .palabras {
     margin-bottom: 20px;
 }
+
 /* //////sobre nosotros */
 
 /* Knowledge */
 
 .SobreNosotros {
-    background-color: #91a811;
+    background-color: #52534f3d;
+    backdrop-filter: blur(1px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
@@ -124,12 +128,15 @@ body {
     width: 100%;
     margin-bottom: 33px;
 }
-.SobreNosotros .Text{
+
+.SobreNosotros .Text {
     width: 100%;
     height: auto;
     margin: 0;
+    color: var(--text);
 }
-.subtitle{
+
+.subtitle {
     margin-top: 0;
     font-size: 2rem;
     margin-bottom: 30px;
@@ -147,7 +154,7 @@ body {
     max-width: 500px;
 }
 
-.SobreNosotrosTexto{
+.SobreNosotrosTexto {
     line-height: 1.7;
     margin-bottom: 15px;
 }
@@ -155,4 +162,81 @@ body {
 .SobreNosotros__img {
     width: 100%;
     display: block;
+}
+
+/*FOOOTEEER*/
+
+/*Pie de pagina o el footer*/
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    background: #040623;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure a {
+    font-size: 2rem;
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #873c3c;
+    margin-right: 10px;
+    background-color: #be7200;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(2, 255, 255);
+}
+
+.pie-pagina .grupo-2 {
+    background-color: var(--background);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
