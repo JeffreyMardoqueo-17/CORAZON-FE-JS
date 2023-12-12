@@ -4,6 +4,8 @@
 :root {
     --color-title: #001A49;
     --text: #ffff;
+    --Bg-Base: #0b0b26;
+    --Borde:#3138b2;
 }
 
 body {
@@ -14,6 +16,32 @@ body {
     background-position: 0 0, 10px 10px;
     /* overflow: hidden; */
 }
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 3px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: var(--Bg-Base);
+    /* Color de fondo del riel */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento (la parte que se arrastra) */
+::-webkit-scrollbar-thumb {
+    background:#3138b2;
+    /* Color del pulgar de la barra de desplazamiento */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento al pasar el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--rosadito);
+    cursor: pointer;
+}
+
+
 
 .caja {
     width: 100%;
@@ -122,8 +150,6 @@ body {
 
 /* //////sobre nosotros */
 
-/* Knowledge */
-
 .SobreNosotros {
     background-color: #52534f3d;
     backdrop-filter: blur(1px);
@@ -172,8 +198,8 @@ body {
 }
 
 .bordeSobre {
-    box-shadow: rgba(76, 255, 243, 0.854) 0px 5px 15px;
-    border: 1px solid rgba(76, 255, 243, 0.854);
+    box-shadow:var(--Borde) 0px 5px 15px;
+    border: 1px solid var(--Borde);
 }
 
 /*FOOOTEEER*/
